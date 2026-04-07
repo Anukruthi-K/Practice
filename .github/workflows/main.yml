@@ -1,11 +1,11 @@
 name: anukruthi
 
 on:
-  push:
-    branches: [ main ]
-
+  schedule:
+    - cron: "21 0 * * *"
+  
 jobs:
-  DEMO:
+  run-schedule:
     runs-on: ubuntu-latest
 
     steps:

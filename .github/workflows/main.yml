@@ -1,0 +1,13 @@
+name: anukruthi
+
+on:
+  schedule:
+    - cron: "21 0 * * *"
+  
+jobs:
+  run-schedule:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Greeting
+        run: echo "Hello form me"
